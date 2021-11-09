@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+//数组倒置
 void arrDaozhi(int* arr, int sz)
 {
     for (int i = 0; i < sz / 2; i++)
@@ -10,7 +11,7 @@ void arrDaozhi(int* arr, int sz)
     }
 }
 
-
+//遍历数组
 void outputArr(int arr[], int sz)
 {
     for (int i = 0; i < sz; i++)
