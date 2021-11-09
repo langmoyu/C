@@ -15,6 +15,7 @@ int GetGCD(int a, int b) {
 	return i;
 }
 
+//获得两数最小公倍数函数
 int GetLCM(int a, int b) {
 	int i = a > b ? a : b;
 	while (1)
