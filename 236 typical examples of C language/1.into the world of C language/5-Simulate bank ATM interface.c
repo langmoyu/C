@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-
+//用户登录
 void login(int account, int passward)
 {
 	int a = 0, b = 0;
@@ -24,7 +24,7 @@ void login(int account, int passward)
 	}
 }
 
-
+//打印菜单
 void menu()
 {
 	printf("Please select the service you want!\n");
@@ -36,14 +36,14 @@ void menu()
 }
 
 
-
+//查询余额
 void queryBalance(int number)
 {
 	printf("Your balance is $%d\n", number);
 }
 
 
-
+//取款
 int withdrawals(int money)
 {
 	int amount = 0;
@@ -71,6 +71,7 @@ int withdrawals(int money)
 
 }
 
+//存款
 int diposit(int money)
 {
 	int amount = 0;
@@ -92,7 +93,7 @@ int diposit(int money)
 	}
 }
 
-
+//更改密码
 int changePassward(int passward)
 {
 	int number = 0;
