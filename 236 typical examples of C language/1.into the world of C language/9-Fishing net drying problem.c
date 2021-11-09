@@ -6,6 +6,7 @@ typedef struct D{
 	int day;
 }DATE;
 
+//判断是否为闰年
 int IsLeapYear(int year)
 {
 	if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
@@ -14,6 +15,7 @@ int IsLeapYear(int year)
 		return 0;
 }
 
+//获取某年某月的天数
 int dayNum(int year, int month)
 {
 	switch (month)
@@ -42,6 +44,7 @@ int dayNum(int year, int month)
 	}
 }
 
+//判断日期是否合理
 int judgeDate(int year, int month, int day)
 {
 	if (year < 1992)
@@ -53,6 +56,7 @@ int judgeDate(int year, int month, int day)
 	return 0;
 }
 
+//计算2个日期相隔的天数
 int dayLess(DATE dateF, DATE dateL)
 {
 	int num = 0;
@@ -88,7 +92,7 @@ int main()
 	date1.year = 1992;
 	date1.month = 1;
 	date1.day = 1;
-	while (1)
+	while (1)		//用户输入一个 晚于1992/1/1 的日期
 	{
 		printf("please enter the date:(year/month/day)\n");
 		scanf("%d/%d/%d", &date2.year, &date2.month, &date2.day);
